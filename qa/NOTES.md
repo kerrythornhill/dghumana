@@ -1,4 +1,4 @@
-# Draft verification
+# Verification notes
 
 - The homepage has one H1, one main landmark, a descriptive title, and preview noindex.
 - Section anchors, image assets, and local stylesheet paths resolve.
@@ -15,6 +15,14 @@
 - The native draft Home page is 155, marked `_humana_route=home`; artwork attachment is 154. Existing published content and site options remain unchanged.
 - Temporary inspection files were removed. Preview tokens are not stored in source control.
 
-This is a browser and functional review, not a complete accessibility audit. Existing wiki and page compatibility must be reviewed before activation. A recent complete files and database backup has not been verified; obtain one before publication.
+This is a browser and functional review, not a complete accessibility audit. The preview observations above describe the prelaunch state; the launch record below supersedes their publication status.
 
-No live theme activation, deletion of archived content, DNS, or security setting changes have been made.
+## Public launch verification — September 19, 2026
+
+- Owner approved publication and confirmed completion of a DigitalOcean snapshot before launch.
+- Published `dg-humana-common-horizon` and native Home page 155; page 155 is the static front page. Previous theme files, published legacy pages, and wiki content remain present.
+- Opened the public homepage without preview parameters. Its title, headline, typography, image, contact links, and Monday–Friday Central Time office hours match the approved version.
+- WordPress `blog_public` is enabled. The public homepage has no preview noindex directive or preview banner. This permits indexing; it does not establish search-engine inclusion.
+- Opened the existing nested wiki page `/wiki/core-cognitive-frameworks/dissection-to-direction-protocol-system-card/`; its title and body rendered without a PHP error. This is a representative legacy-content check, not an exhaustive archive audit.
+- Phone and tablet coverage is documented in the preceding preview review; this launch check used the same approved styles on the public site.
+
