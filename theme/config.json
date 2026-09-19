@@ -1,0 +1,16 @@
+{
+  "name": "DG Humana Institute",
+  "theme": "DG Humana — Common Horizon",
+  "slug": "dg-common-horizon",
+  "prefix": "humana",
+  "domain": "https://dghumana.com",
+  "body_class": "dg-site",
+  "tagline": "Dignity · agency · the future of work",
+  "pages": {
+    "home": {
+      "title": "DG Humana Institute — A more human technological future",
+      "label": "Home",
+      "description": "An emerging independent initiative advancing human dignity and agency in the age of automation. Purpose, vision, and direction."
+    }
+  }
+}

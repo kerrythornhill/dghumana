@@ -1,0 +1,1 @@
+<?php get_header(); ?><main id="main" class="wrap section error-page"><p class="eyebrow">404 / Page not found</p><h1>A different<br>direction.</h1><p>This page may have moved, or the address may be incomplete.</p><a class="text-link" href="<?php echo esc_url(humana_url('home')); ?>">Return to the homepage <span aria-hidden="true">↗</span></a></main><?php get_footer(); ?>
