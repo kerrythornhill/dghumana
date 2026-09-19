@@ -14,7 +14,7 @@ Open `review.html` for a self-contained preview with desktop, tablet, and phone 
 
 ## Status
 
-Draft; no automatic deployment. Existing WordPress pages and archives have not been removed or rewritten.
+Installed as an isolated WPVibe draft on September 19, 2026, with editable Home page 155. The footer lists info@dghumana.com, 469-314-4447, and Monday–Friday office hours of 9:00 a.m.–5:00 p.m. Central Time. Existing published pages and archives have not been removed or rewritten. This repository does not automatically deploy.
 
 See [INSTALL.md](INSTALL.md) and [qa/NOTES.md](qa/NOTES.md) before installation or publication.
 

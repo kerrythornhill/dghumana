@@ -1,0 +1,9 @@
+/* WPVibe preview tokens. The complete portable stylesheet is assets/site.css. */
+@theme {
+    --color-primary: #3f6575;
+    --color-neutral: #2b354b;
+    --color-background: #f3f3ee;
+    --font-sans: 'IBM Plex Sans Condensed', sans-serif;
+    --font-serif: 'IBM Plex Serif', Georgia, serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+}

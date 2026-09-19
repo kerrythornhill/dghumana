@@ -10,7 +10,7 @@ foreach ($config['pages'] as $key => $page) {
     if ($existing) { WP_CLI::log('Preserved existing ' . $key . ' page ' . $existing[0]->ID); continue; }
     $slug = $key === 'home' ? 'horizon-home' : $key;
     if (get_page_by_path($slug)) { WP_CLI::error('Page slug already exists: ' . $slug . '. Resolve the route before importing; no existing content was overwritten.'); }
-    $id = wp_insert_post(array('post_type'=>'page','post_status'=>'draft','post_name'=>$slug,'post_title'=>$page['label'],'post_content'=>file_get_contents($root . '/content/' . $key . '.html'),'comment_status'=>'closed','ping_status'=>'closed','meta_input'=>array('_humana_route'=>$key)), true);
+    $id = wp_insert_post(array('post_type'=>'page','post_status'=>'draft','post_name'=>$slug,'post_title'=>$page['label'],'post_content'=>"<!-- wp:html -->\n" . file_get_contents($root . '/content/' . $key . '.html') . "\n<!-- /wp:html -->",'comment_status'=>'closed','ping_status'=>'closed','meta_input'=>array('_humana_route'=>$key)), true);
     if (is_wp_error($id)) { WP_CLI::error($id->get_error_message()); }
     WP_CLI::success('Created draft ' . $key . ': ' . $id);
 }
